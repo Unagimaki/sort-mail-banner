@@ -1,0 +1,129 @@
+.title,
+.text {
+    text-align: center;
+    color: #005FF9;
+    font-size: 6.94vw;
+    position: absolute;
+    font-family: 'VKDisplay Medium';
+    left: 15.35vw;
+    top: 33.47vw;
+}
+.text {
+    opacity: 0;
+}
+.scaleTitle {
+    -webkit-animation: scaleTitle .5s linear;
+            animation: scaleTitle .5s linear;
+    -webkit-animation-iteration-count: 3;
+            animation-iteration-count: 3;
+}
+.arrow {
+    -webkit-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+    position: absolute;
+    width: 31vw;
+    height: 31vw;
+}
+.arrow:nth-child(1) {
+    z-index: 99;
+    opacity: 0;
+    top: 30vw;
+    left: 18vw;
+}
+/*
+.arrow:nth-child(2) {
+    opacity: 0;
+    top: 35.83vw;
+    left: 29.1vw;
+    -webkit-animation-delay: .3s;
+            animation-delay: .3s;
+}
+.arrow:nth-child(3) {
+    opacity: 0;
+    top: 27.5vw;
+    left: 22.64vw;
+    -webkit-animation-delay: .6s;
+            animation-delay: .6s;
+} */
+.mask {
+    opacity: .2;
+    position: absolute;
+    width: 100vw;
+    height: 75vw;
+    z-index: 999;
+}
+.win {
+    -webkit-animation: win .5s forwards;
+            animation: win .5s forwards;
+}
+.lose {
+    -webkit-animation: lose .5s forwards;
+            animation: lose .5s forwards;
+}
+@-webkit-keyframes win {
+    0% {
+        background-color: none;
+    }
+    50% {
+        background-color: lawngreen;
+    }
+    100% {
+        background-color: none;
+    }
+}
+@keyframes win {
+    0% {
+        background-color: none;
+    }
+    50% {
+        background-color: lawngreen;
+    }
+    100% {
+        background-color: none;
+    }
+}
+@-webkit-keyframes lose {
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: none;
+    }
+}
+@keyframes lose {
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: none;
+    }
+}
+@-webkit-keyframes scaleTitle {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50%  {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+@keyframes scaleTitle {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50%  {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}

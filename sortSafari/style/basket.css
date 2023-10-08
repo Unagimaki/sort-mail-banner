@@ -1,0 +1,19 @@
+.basket {
+    width: 17.71vw;
+    height: 15.76vw;
+    position: absolute;   
+    top: 6.88vw;
+}
+
+.basket:nth-child(1) {
+    left: 7.15vw;
+}
+.basket:nth-child(2) {
+    left: 29.72vw;
+}
+.basket:nth-child(3) {
+    left: 52.36vw;
+}
+.basket:nth-child(4) {
+    left: 75vw;
+}

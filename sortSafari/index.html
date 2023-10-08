@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/game.css">
+    <link rel="stylesheet" href="./style/basket.css">
+    <link rel="stylesheet" href="./style/letter.css">
+    <link rel="stylesheet" href="./style/end.css">
+    <link rel="stylesheet" href="./style/null.css">
+    <link rel="stylesheet" href="./style/fonts.css">
+    <link rel="stylesheet" href="./style/dott.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="mask none"></div>
+    
+    <section class="gameWrapper">
+        <div class="arrow_container">
+            <img src="./images/arrow.png" alt="arrow" class="arrow">    
+        </div>
+    
+        <div class="title">Рассортируйте почту</div>
+        <div class="text">Нажмите и направьте</div>
+    
+        <div class="basket_container">
+            <img data-type="letter" class="basket letter_basket" src="./images/basket/letter.png" alt="letter">
+            <img data-type="spam" class="basket spam_basket" src="./images/basket/spam.png" alt="spam">
+            <img data-type="checks" class="basket checks_basket" src="./images/basket/cheks.png" alt="checks">
+            <img data-type="mail" class="basket mail_basket" src="./images/basket/mailing.png" alt="mail">
+        </div>
+    
+        <div class="letter_container">
+            <img class="letter letter_letter" data-type="letter" src="./images/letters/letter.png" alt="letter">
+            <img class="letter letter_mail" data-type="mail" src="./images/letters/mails.png" alt="mails">
+            <img class="letter letter_check" data-type="checks" src="./images/letters/checks.png" alt="checks">
+            <img class="letter letter_spam" data-type="spam" src="./images/letters/spam.png" alt="spam">
+        </div>
+    </section>
+
+    <section class="end none">
+        <div class="end_inner">
+            <img src="./images/logo.png" alt="logo" class="end_logo">
+            <div class="end_text">Почта Mail.ru <br> с автоматической <br> сортировкой писем</div>
+            <button class="end_button">Установить</button>   
+            <div class="end_info">0+ ООО «ВК», ИНН: 7743001840</div> 
+        </div>
+    </section>
+
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

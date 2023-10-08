@@ -1,0 +1,82 @@
+.container_back {
+    width: 22.85vw;
+    top: 3vw;
+    left: -0.3vw;
+    position: absolute;
+    z-index: 1;
+}
+.container_front {
+    width: 26.31vw;
+    top: 10vw;
+    left: -2vw;
+    position: absolute;
+    z-index: 5;
+}
+.letter_container {
+    position: absolute;
+    width: 24.31vw;
+    height: 16.04vw;
+    top: 50vw;
+    left: 37.85vw;
+}
+.letter {
+    transition: all .2s linear;
+    left: 3vw;
+    position: absolute;
+    
+    height: 10.69vw;
+    width: 16.53vw;
+
+}
+
+.letter_spam {
+    z-index: 2;
+}
+.letter_check {
+    top: 3vw;
+    z-index: 3;
+}
+.letter_mail {
+    top: 5.85vw;
+    z-index: 4;
+}
+.letter_letter {
+    top: 8vw;
+    z-index: 5;
+}
+.moveLetters {
+    -webkit-animation: moveLetters .5s linear;
+            animation: moveLetters .5s linear;
+}
+.moveUp {
+    -webkit-animation: moveUp 0.5s forwards;
+            animation: moveUp 0.5s forwards;
+}
+@-webkit-keyframes moveLetters {
+    0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(-2vw);
+                transform: translateY(-2vw);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+@keyframes moveLetters {
+    0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(-2vw);
+                transform: translateY(-2vw);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
